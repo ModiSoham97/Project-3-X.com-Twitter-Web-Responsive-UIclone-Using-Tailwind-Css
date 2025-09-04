@@ -7,6 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-blue-50: oklch(97% 0.014 254.604);
     --color-black: #000;
     --color-white: #fff;
     --default-font-family: var(--font-sans);
@@ -162,14 +165,74 @@
   }
 }
 @layer utilities {
+  .m-auto {
+    margin: auto;
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .h-\[50\.67px\] {
+    height: 50.67px;
+  }
+  .h-\[80vh\] {
+    height: 80vh;
+  }
+  .h-\[85vh\] {
+    height: 85vh;
+  }
+  .h-\[95vh\] {
+    height: 95vh;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
+  .w-\[5vw\] {
+    width: 5vw;
+  }
+  .w-\[8vw\] {
+    width: 8vw;
+  }
+  .w-\[10vw\] {
+    width: 10vw;
+  }
+  .w-\[50\.67px\] {
+    width: 50.67px;
+  }
+  .w-\[75vw\] {
+    width: 75vw;
+  }
+  .w-\[80vw\] {
+    width: 80vw;
+  }
+  .w-\[82vw\] {
+    width: 82vw;
+  }
+  .w-\[85vw\] {
+    width: 85vw;
+  }
+  .w-\[90vw\] {
+    width: 90vw;
+  }
+  .w-\[vw\] {
+    width: vw;
   }
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -178,8 +241,17 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-white {
-    background-color: var(--color-white);
+  .bg-blue-50 {
+    background-color: var(--color-blue-50);
+  }
+  .bg-red-50 {
+    background-color: var(--color-red-50);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+  .align-middle {
+    vertical-align: middle;
   }
   .underline {
     text-decoration-line: underline;
