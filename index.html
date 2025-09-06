@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X/Twitter</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/src/output.css">
 </head>
 
 <body class="bg-black m-0 p-0 overflow-hidden">
     <Main class="flex w-[85vw] m-auto">
         <div class="navbar flex h-[100vh] ">
-            <nav class="flex flex-col w-[7vw] h-[100vh]  items-center m-auto overflow-y-scroll overflow-x-hidden">
+            <nav class="flex flex-col w-[67w] h-[100vh]  items-center m-auto overflow-y-scroll overflow-x-hidden">
                 <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
                     <div class="logo flex w-[50.67px] h-[50.67px]  justify-center relative">
                         <img src="assets/xlogo.svg" class="relative z-1" width="32px" height="29px" alt="logo">
@@ -66,7 +66,10 @@
                 </a>
             </nav>
         </div>
-        <div class=" flex flex-col">
+        <div class="">
+
+        </div>
+        <div class=" flex-col">
             <div class="flex ">
 
                 <div
@@ -82,16 +85,59 @@
                     </span>
                 </div>
             </div>
-            <div class="WhatsHappening w-[598.67px] h-[120px] bg-red-900">
-                <div class="flex">
-                     <div class="profile w-[40px] h-[40px] object-contain rounded-[50%]">
-                        <img src="https://pbs.twimg.com/profile_images/1963478308194324480/UPerjgwY_bigger.png"
-                            class="rounded-[50%]" alt="">
+            <div
+                class="WhatsHappening w-[600px] h-[120px] box-border pl-[15px]  text-2xl font-extralight border-[0.8px] border-[#4d4c4cc8]">
+                <div class="flex ">
+                    <div class="">
+
+                        <div class="profile w-[40px] h-[40px] mt-[15px] object-contain rounded-[50%]">
+                            <img src="https://pbs.twimg.com/profile_images/1963478308194324480/UPerjgwY_bigger.png"
+                                class="rounded-[50%]" alt="">
+                        </div>
+                    </div>
+                    <div class="placeholder">
+                        <input type="text" name="" id="tp" placeholder="What's Happening?"
+                            class="appearance-none w-[400px] h-[40px] mt-[15px] ml-[5px] focus:outline-none font-extralight">
+                    </div>
+                </div>
+                <div class="postimgs flex gap-[220px] ml-[50px] mt-[20px] items-center">
+                    <div class="flex gap-[15px]">
+
+                        <div class="1">
+                            <img src="assets/Post/media.svg" class="text-[#1d9bf0]" alt="" srcset="">
+                        </div>
+                        <div class="1">
+                            <img src="assets/Post/gif.svg" class="text-[#1d9bf0]" alt="" srcset="">
+                        </div>
+                        <div class="1">
+                            <img src="assets/Post/grok.svg" class="text-[#1d9bf0]" alt="" srcset="">
+                        </div>
+                        <div class="1">
+                            <img src="assets/Post/poll.svg" class="text-[#1d9bf0]" alt="" srcset="">
+                        </div>
+                        <div class="1">
+                            <img src="assets/Post/emoji.svg" class="text-[#1d9bf0]" alt="" srcset="">
+                        </div>
+                        <div class="1">
+                            <img src="assets/Post/schedule.svg" class="text-[#1d9bf0]" alt="" srcset="">
+                        </div>
+                        <div class="1">
+                            <img src="assets/Post/location.svg" class="text-[#1d9bf0]" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="post text-black">
+                        <button
+                            class="bg-white text-black font-bold rounded-full px-8 py-3 w-[64px] h-[36px] flex items-center justify-center text-xl">Post</button>
                     </div>
                 </div>
             </div>
+            <div class="w-[600px] h-[50px]  flex justify-center items-center">
+                <span> <a href="" class="showpost">Show 350 posts</a></span>
+            </div>
         </div>
-    </Main>
+
+
+    </main>
 </body>
 
 </html>
