@@ -7,6 +7,7 @@
 .navbar nav::-webkit-scrollbar-thumb {
 	background: #222;
 	border-radius: 8px;
+
 }
 .navbar nav::-webkit-scrollbar-track {
 	background: #444;
@@ -29,4 +30,31 @@ button{
 .showpost{
 	color:#1d9bf0;
 	font-weight: 500;
+}
+.grok img{
+	fill: blue !important; 
+}
+.name1 span,.id1{
+	font-size: 14px;
+
+}
+.msg{
+
+	font-size:16px;
+	font-weight: 400;
+}
+.e1 div span{
+	font-size: 16px;
+	font-weight: 400;
+	color: #e7e9ea81;
+}
+.sub1 {
+	font-size: 20px;
+}
+.sub2 {
+	font-size: 14px;
+	font-weight: 500;
+}
+.subscribe button{
+	color: white;
 }

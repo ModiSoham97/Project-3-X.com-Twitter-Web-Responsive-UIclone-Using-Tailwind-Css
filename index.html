@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="/src/output.css">
 </head>
 
-<body class="bg-black m-0 p-0 overflow-hidden">
-    <Main class="flex w-[85vw] m-auto">
+<body class="bg-black m-0 p-0 ">
+    <main class="flex w-[85vw] m-auto">
         <div class="navbar flex h-[100vh] ">
-            <nav class="flex flex-col w-[67w] h-[100vh]  items-center m-auto overflow-y-scroll overflow-x-hidden">
+            <nav class="flex flex-col w-[6vw] h-[100vh]  items-center m-auto overflow-y-scroll overflow-x-hidden fixed">
                 <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
                     <div class="logo flex w-[50.67px] h-[50.67px]  justify-center relative">
                         <img src="assets/xlogo.svg" class="relative z-1" width="32px" height="29px" alt="logo">
@@ -66,28 +66,22 @@
                 </a>
             </nav>
         </div>
-        <div class="">
-
-        </div>
-        <div class=" flex-col">
-            <div class="flex ">
+        <!-- Removed empty div -->
+        <div class="flex-col relative left-[75px]">
+            <div class="flex fixed  backdrop-blur-xl ">
 
                 <div
                     class="1 w-[300px] h-[53px] flex items-center justify-center border-[0.8px] border-[#4d4c4cc8] pl-[32px] pr-[32px] border-t-[transparent] border-r-[transparent] hover:bg-[#282828]">
-                    <span class="text-center">
-                        For You
-                    </span>
+                    <span class="text-center ">For You</span>
                 </div>
                 <div
                     class="2 w-[300px] h-[53px] flex items-center justify-center border-[0.8px] border-[#4d4c4cc8] pl-[32px] pr-[32px] border-t-[transparent] border-l-[transparent] hover:bg-[#282828]">
-                    <span class="text-center">
-                        Following
-                    </span>
+                    <span class="text-center">Following</span>
                 </div>
             </div>
             <div
-                class="WhatsHappening w-[600px] h-[120px] box-border pl-[15px]  text-2xl font-extralight border-[0.8px] border-[#4d4c4cc8]">
-                <div class="flex ">
+                class="WhatsHappening w-[600px] h-[120px] box-border pl-[15px]  text-2xl font-extralight border-[0.8px] border-[#4d4c4cc8] mt-[53px]">
+                <div class="flex relative ">
                     <div class="">
 
                         <div class="profile w-[40px] h-[40px] mt-[15px] object-contain rounded-[50%]">
@@ -127,17 +121,832 @@
                     </div>
                     <div class="post text-black">
                         <button
-                            class="bg-white text-black font-bold rounded-full px-8 py-3 w-[64px] h-[36px] flex items-center justify-center text-xl">Post</button>
+                            class="bg-white text-black font-bold rounded-full px-8 py-3 w-[64px] h-[36px] flex items-center justify-center text-xl cursor-pointer">Post</button>
                     </div>
                 </div>
             </div>
-            <div class="w-[600px] h-[50px]  flex justify-center items-center">
+            <div class="w-[600px] h-[50px]  flex justify-center items-center border-[0.8px] border-[#4d4c4cc8]">
                 <span> <a href="" class="showpost">Show 350 posts</a></span>
             </div>
+            <!-- Example post block, add more as needed -->
+            <div class="posts w-[600px]  ">
+                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
+                    <div class="postblockupper flex justify-between gap-[10px] items-center">
+                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+                            <div
+                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
+                                    alt="" class="object-cover" srcset="">
+                            </div>
+                            <div class="name"><span>Abhijit Chavda</span></div>
+                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
+                            <div class="date flex items-center">
+                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                    style="color:#71767b;font-weight: 500;">.</span>
+                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                    5</span>
+                            </div>
+                        </div>
+                        <div class="grokandmore flex gap-[5px] mr-[5px]">
+                            <div class="grok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
+                                    viewBox="0 0 33 32" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
+                                    <g>
+                                        <path
+                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="more">
+                                <img src="assets/Post/more.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg ml-[55px] mt-[-15px]">
+                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
+                            into India's Ukraine.</span>
+                    </div>
+                    <div
+                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
+                        <div class="aprofile flex justify-start flex-col items-start">
+                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+
+                                <div
+                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
+                                        alt="" class="object-cover" srcset="">
+                                </div>
+                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
+                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
+                                </div>
+                                <div class="date flex items-center">
+
+                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                        style="color:#71767b;font-weight: 500;">.</span>
+                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                        5</span>
+
+                                </div>
+
+                            </div>
+                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
+
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
+                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
+                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
+                                    voluptatem!
+                                </span>
+                            </div>
+                            <div class="img">
+                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
+                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
+                        <div class="e1 flex gap-[50px]">
+                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
+                                <span>421</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
+                            <span>8.4K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
+                            <span>40K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
+                            <span>857K</span>
+                            </div>
+
+                        </div>
+                        <div class="right flex gap-[10px]">
+                            <div><img src="assets/save.svg" alt=""></div>
+                            <div><img src="assets/share.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
+                    <div class="postblockupper flex justify-between gap-[10px] items-center">
+                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+                            <div
+                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
+                                    alt="" class="object-cover" srcset="">
+                            </div>
+                            <div class="name"><span>Abhijit Chavda</span></div>
+                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
+                            <div class="date flex items-center">
+                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                    style="color:#71767b;font-weight: 500;">.</span>
+                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                    5</span>
+                            </div>
+                        </div>
+                        <div class="grokandmore flex gap-[5px] mr-[5px]">
+                            <div class="grok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
+                                    viewBox="0 0 33 32" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
+                                    <g>
+                                        <path
+                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="more">
+                                <img src="assets/Post/more.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg ml-[55px] mt-[-15px]">
+                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
+                            into India's Ukraine.</span>
+                    </div>
+                    <div
+                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
+                        <div class="aprofile flex justify-start flex-col items-start">
+                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+
+                                <div
+                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
+                                        alt="" class="object-cover" srcset="">
+                                </div>
+                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
+                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
+                                </div>
+                                <div class="date flex items-center">
+
+                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                        style="color:#71767b;font-weight: 500;">.</span>
+                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                        5</span>
+
+                                </div>
+
+                            </div>
+                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
+
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
+                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
+                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
+                                    voluptatem!
+                                </span>
+                            </div>
+                            <div class="img">
+                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
+                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
+                        <div class="e1 flex gap-[50px]">
+                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
+                                <span>421</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
+                            <span>8.4K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
+                            <span>40K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
+                            <span>857K</span>
+                            </div>
+
+                        </div>
+                        <div class="right flex gap-[10px]">
+                            <div><img src="assets/save.svg" alt=""></div>
+                            <div><img src="assets/share.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
+                    <div class="postblockupper flex justify-between gap-[10px] items-center">
+                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+                            <div
+                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
+                                    alt="" class="object-cover" srcset="">
+                            </div>
+                            <div class="name"><span>Abhijit Chavda</span></div>
+                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
+                            <div class="date flex items-center">
+                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                    style="color:#71767b;font-weight: 500;">.</span>
+                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                    5</span>
+                            </div>
+                        </div>
+                        <div class="grokandmore flex gap-[5px] mr-[5px]">
+                            <div class="grok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
+                                    viewBox="0 0 33 32" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
+                                    <g>
+                                        <path
+                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="more">
+                                <img src="assets/Post/more.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg ml-[55px] mt-[-15px]">
+                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
+                            into India's Ukraine.</span>
+                    </div>
+                    <div
+                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
+                        <div class="aprofile flex justify-start flex-col items-start">
+                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+
+                                <div
+                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
+                                        alt="" class="object-cover" srcset="">
+                                </div>
+                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
+                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
+                                </div>
+                                <div class="date flex items-center">
+
+                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                        style="color:#71767b;font-weight: 500;">.</span>
+                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                        5</span>
+
+                                </div>
+
+                            </div>
+                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
+
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
+                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
+                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
+                                    voluptatem!
+                                </span>
+                            </div>
+                            <div class="img">
+                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
+                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
+                        <div class="e1 flex gap-[50px]">
+                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
+                                <span>421</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
+                            <span>8.4K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
+                            <span>40K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
+                            <span>857K</span>
+                            </div>
+
+                        </div>
+                        <div class="right flex gap-[10px]">
+                            <div><img src="assets/save.svg" alt=""></div>
+                            <div><img src="assets/share.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
+                    <div class="postblockupper flex justify-between gap-[10px] items-center">
+                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+                            <div
+                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
+                                    alt="" class="object-cover" srcset="">
+                            </div>
+                            <div class="name"><span>Abhijit Chavda</span></div>
+                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
+                            <div class="date flex items-center">
+                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                    style="color:#71767b;font-weight: 500;">.</span>
+                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                    5</span>
+                            </div>
+                        </div>
+                        <div class="grokandmore flex gap-[5px] mr-[5px]">
+                            <div class="grok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
+                                    viewBox="0 0 33 32" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
+                                    <g>
+                                        <path
+                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="more">
+                                <img src="assets/Post/more.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg ml-[55px] mt-[-15px]">
+                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
+                            into India's Ukraine.</span>
+                    </div>
+                    <div
+                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
+                        <div class="aprofile flex justify-start flex-col items-start">
+                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+
+                                <div
+                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
+                                        alt="" class="object-cover" srcset="">
+                                </div>
+                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
+                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
+                                </div>
+                                <div class="date flex items-center">
+
+                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                        style="color:#71767b;font-weight: 500;">.</span>
+                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                        5</span>
+
+                                </div>
+
+                            </div>
+                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
+
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
+                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
+                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
+                                    voluptatem!
+                                </span>
+                            </div>
+                            <div class="img">
+                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
+                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
+                        <div class="e1 flex gap-[50px]">
+                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
+                                <span>421</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
+                            <span>8.4K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
+                            <span>40K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
+                            <span>857K</span>
+                            </div>
+
+                        </div>
+                        <div class="right flex gap-[10px]">
+                            <div><img src="assets/save.svg" alt=""></div>
+                            <div><img src="assets/share.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
+                    <div class="postblockupper flex justify-between gap-[10px] items-center">
+                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+                            <div
+                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
+                                    alt="" class="object-cover" srcset="">
+                            </div>
+                            <div class="name"><span>Abhijit Chavda</span></div>
+                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
+                            <div class="date flex items-center">
+                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                    style="color:#71767b;font-weight: 500;">.</span>
+                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                    5</span>
+                            </div>
+                        </div>
+                        <div class="grokandmore flex gap-[5px] mr-[5px]">
+                            <div class="grok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
+                                    viewBox="0 0 33 32" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
+                                    <g>
+                                        <path
+                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="more">
+                                <img src="assets/Post/more.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg ml-[55px] mt-[-15px]">
+                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
+                            into India's Ukraine.</span>
+                    </div>
+                    <div
+                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
+                        <div class="aprofile flex justify-start flex-col items-start">
+                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+
+                                <div
+                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
+                                        alt="" class="object-cover" srcset="">
+                                </div>
+                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
+                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
+                                </div>
+                                <div class="date flex items-center">
+
+                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                        style="color:#71767b;font-weight: 500;">.</span>
+                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                        5</span>
+
+                                </div>
+
+                            </div>
+                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
+
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
+                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
+                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
+                                    voluptatem!
+                                </span>
+                            </div>
+                            <div class="img">
+                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
+                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
+                        <div class="e1 flex gap-[50px]">
+                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
+                                <span>421</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
+                            <span>8.4K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
+                            <span>40K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
+                            <span>857K</span>
+                            </div>
+
+                        </div>
+                        <div class="right flex gap-[10px]">
+                            <div><img src="assets/save.svg" alt=""></div>
+                            <div><img src="assets/share.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
+                    <div class="postblockupper flex justify-between gap-[10px] items-center">
+                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+                            <div
+                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
+                                    alt="" class="object-cover" srcset="">
+                            </div>
+                            <div class="name"><span>Abhijit Chavda</span></div>
+                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
+                            <div class="date flex items-center">
+                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                    style="color:#71767b;font-weight: 500;">.</span>
+                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                    5</span>
+                            </div>
+                        </div>
+                        <div class="grokandmore flex gap-[5px] mr-[5px]">
+                            <div class="grok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
+                                    viewBox="0 0 33 32" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
+                                    <g>
+                                        <path
+                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="more">
+                                <img src="assets/Post/more.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg ml-[55px] mt-[-15px]">
+                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
+                            into India's Ukraine.</span>
+                    </div>
+                    <div
+                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
+                        <div class="aprofile flex justify-start flex-col items-start">
+                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+
+                                <div
+                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
+                                        alt="" class="object-cover" srcset="">
+                                </div>
+                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
+                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
+                                </div>
+                                <div class="date flex items-center">
+
+                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                        style="color:#71767b;font-weight: 500;">.</span>
+                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                        5</span>
+
+                                </div>
+
+                            </div>
+                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
+
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
+                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
+                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
+                                    voluptatem!
+                                </span>
+                            </div>
+                            <div class="img">
+                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
+                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
+                        <div class="e1 flex gap-[50px]">
+                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
+                                <span>421</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
+                            <span>8.4K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
+                            <span>40K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
+                            <span>857K</span>
+                            </div>
+
+                        </div>
+                        <div class="right flex gap-[10px]">
+                            <div><img src="assets/save.svg" alt=""></div>
+                            <div><img src="assets/share.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
+                    <div class="postblockupper flex justify-between gap-[10px] items-center">
+                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+                            <div
+                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
+                                    alt="" class="object-cover" srcset="">
+                            </div>
+                            <div class="name"><span>Abhijit Chavda</span></div>
+                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
+                            <div class="date flex items-center">
+                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                    style="color:#71767b;font-weight: 500;">.</span>
+                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                    5</span>
+                            </div>
+                        </div>
+                        <div class="grokandmore flex gap-[5px] mr-[5px]">
+                            <div class="grok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
+                                    viewBox="0 0 33 32" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
+                                    <g>
+                                        <path
+                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="more">
+                                <img src="assets/Post/more.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg ml-[55px] mt-[-15px]">
+                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
+                            into India's Ukraine.</span>
+                    </div>
+                    <div
+                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
+                        <div class="aprofile flex justify-start flex-col items-start">
+                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+
+                                <div
+                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
+                                        alt="" class="object-cover" srcset="">
+                                </div>
+                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
+                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
+                                </div>
+                                <div class="date flex items-center">
+
+                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                        style="color:#71767b;font-weight: 500;">.</span>
+                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                        5</span>
+
+                                </div>
+
+                            </div>
+                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
+
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
+                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
+                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
+                                    voluptatem!
+                                </span>
+                            </div>
+                            <div class="img">
+                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
+                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
+                        <div class="e1 flex gap-[50px]">
+                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
+                                <span>421</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
+                            <span>8.4K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
+                            <span>40K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
+                            <span>857K</span>
+                            </div>
+
+                        </div>
+                        <div class="right flex gap-[10px]">
+                            <div><img src="assets/save.svg" alt=""></div>
+                            <div><img src="assets/share.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
+                    <div class="postblockupper flex justify-between gap-[10px] items-center">
+                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+                            <div
+                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
+                                    alt="" class="object-cover" srcset="">
+                            </div>
+                            <div class="name"><span>Abhijit Chavda</span></div>
+                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
+                            <div class="date flex items-center">
+                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                    style="color:#71767b;font-weight: 500;">.</span>
+                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                    5</span>
+                            </div>
+                        </div>
+                        <div class="grokandmore flex gap-[5px] mr-[5px]">
+                            <div class="grok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
+                                    viewBox="0 0 33 32" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
+                                    <g>
+                                        <path
+                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="more">
+                                <img src="assets/Post/more.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg ml-[55px] mt-[-15px]">
+                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
+                            into India's Ukraine.</span>
+                    </div>
+                    <div
+                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
+                        <div class="aprofile flex justify-start flex-col items-start">
+                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
+
+                                <div
+                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
+                                        alt="" class="object-cover" srcset="">
+                                </div>
+                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
+                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
+                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
+                                </div>
+                                <div class="date flex items-center">
+
+                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
+                                        style="color:#71767b;font-weight: 500;">.</span>
+                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
+                                        5</span>
+
+                                </div>
+
+                            </div>
+                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
+
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
+                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
+                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
+                                    voluptatem!
+                                </span>
+                            </div>
+                            <div class="img">
+                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
+                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
+                        <div class="e1 flex gap-[50px]">
+                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
+                                <span>421</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
+                            <span>8.4K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
+                            <span>40K</span>
+                            </div>
+                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
+                            <span>857K</span>
+                            </div>
+
+                        </div>
+                        <div class="right flex gap-[10px]">
+                            <div><img src="assets/save.svg" alt=""></div>
+                            <div><img src="assets/share.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
+        </div>
+        <div class="footer  relative ml-[150px] w-[362px]">
+            <div class="search ">
+                <img src="assets/search.svg" class="relative z-1 top-[13px] left-[10px]" alt="">
+                <input type="text"  class=" border-[0.8px] border-[#4d4c4cc8] bg-black w-[362px] relative rounded-3xl h-[40px] box-border pl-[40px] top-[-20px]" placeholder="Search">
+            </div>
+            <div class="subscribe flex flex-col gap-[10px] box-border border-[0.8px] border-[#4d4c4cc8] pl-[16px] pt-[10px] pb-[15px] pr-[16px] hover:bg-[#282828] rounded-[20px]">
+                <span class="sub1">Subscribe to Premium</span>
+                <span class="sub2">Subscribe to unlock new features and if eligible, receive a share of revenue.</span>
+                <button class="w-[100px] h-[30px] items-center flex justify-center rounded-3xl bg-blue-400">Subscribe</button>
+            </div>
+        </div>
     </main>
+    
+
 </body>
 
 </html>
