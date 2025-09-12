@@ -70,3 +70,34 @@ button{
 	font-size: 12px;
 	font-weight: 400;
 }
+.post{
+	color: black;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+@media screen and (max-height:1110px) {
+	.list{
+		display: none;
+	}
+}
+@media screen and (max-height:940px) {
+	.jobs{
+		display: none;
+	}
+}
+@media screen and (max-height:890px) {
+	.bookmarks{
+		display: none;
+	}
+}
+@media screen and (max-height:820px) {
+	.premium{
+		display: none;
+	}
+}
+@media screen and (max-height:750px) {
+	.verified{
+		display: none;
+	}
+}

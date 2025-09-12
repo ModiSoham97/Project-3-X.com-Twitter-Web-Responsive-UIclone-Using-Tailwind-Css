@@ -9,65 +9,101 @@
 </head>
 
 <body class="bg-black m-0 p-0 ">
-    <main class="flex w-[85vw] m-auto">
-        <div class="navbar flex h-[100vh] ">
-            <nav class="flex flex-col w-[7vw] h-[100vh] items-center m-auto overflow-y-scroll overflow-x-hidden fixed">
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center relative">
-                        <img src="assets/xlogo.svg" class="relative z-1" width="32px" height="29px" alt="logo">
-                    </div>
-                </a>
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center">
-                        <img src="assets/home.svg" width="26.97px" height="24.38px" alt="logo">
-                    </div>
-                </a>
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center">
-                        <img src="assets/search.svg" width="26.97px" height="24.38px" alt="logo">
-                    </div>
-                </a>
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center">
-                        <img src="assets/notification.svg" width="26.97px" height="24.38px" alt="logo">
-                    </div>
-                </a>
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center hover:bg-[#282828] relative">
-                        <img src="assets/messages.svg" width="26.97px" height="24.38px" alt="logo">
-                    </div>
-                </a>
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center">
-                        <img src="assets/grok.svg" width="26.97px" height="24.38px" alt="logo">
-                    </div>
-                </a>
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center">
-                        <img src="assets/profile.svg" width="26.97px" height="24.38px" alt="logo">
-                    </div>
-                </a>
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-black hover:bg-[#282828] relative">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center">
-                        <img src="assets/more.svg" width="26.97px" height="24.38px" alt="logo">
-                    </div>
-                </a>
-                <a href="" class="w-[52px] h-[52px] rounded-[50%] bg-white  hover:bg-[rgb(232,232,232)] relative">
-                    <div class="logo flex w-[50.67px] h-[50.67px]  justify-center">
-                        <img src="assets/leaf.svg" width="26.97px" height="24.38px" alt="logo">
-                    </div>
-                </a>
-                <a href=""
-                    class="object-cover w-[52px] h-[52px] rounded-[50%] mt-[20px] flex items-center justify-center">
-                    <div class="logo flex w-[40px] h-[40px] items-center justify-center object-cover">
+    <main class="flex w-[90vw] m-auto gap-[7vw] justify-center">
+        <div class="navbar 2xl:w-[7vw] flex h-[100vh]  flex-col ">
+            <aside class="flex flex-col justify-between w-60 px-4 py-3 items-start h-[100vh] fixed">
+                <div class="flex flex-col gap-2 items-start">
+                    <!-- Logo -->
+                    <a href="#" class="p-2 w-fit rounded-full hover:bg-[#282828]  transition ml-[10px]">
+                        <img src="assets/xlogo.svg" alt="Logo" class="w-7 h-7" />
+                    </a>
+
+                    <!-- Nav Items -->
+                    <nav class="flex flex-col gap-1 text-lg font-medium justify-between h-[60vh]">
+                        <!-- Active/Home -->
+                        <a href="#"
+                            class="relative flex items-center gap-4 px-4 py-2 font-semibold hover:bg-[#282828] rounded-full">
+
+                            <img src="assets/home.svg" alt="Home" class="w-6 h-6 shrink-0" />
+                            <span class="hidden 2xl:block ">Home</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] ">
+                            <img src="assets/search.svg" alt="Explore" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Explore</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] ">
+                            <img src="assets/notification.svg" alt="Notifications" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Notifications</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] ">
+                            <img src="assets/messages.svg" alt="Messages" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Messages</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] ">
+                            <img src="assets/grok.svg" alt="Grok" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Grok</span>
+                        </a>
+                        <a href="#" class=" list flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828]  ">
+                            <img src="assets/list.svg" alt="Grok" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Lists</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] bookmarks">
+                            <img src="assets/bookmark.svg" alt="Grok" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Bookmarks</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] jobs ">
+                            <img src="assets/jobs.svg" alt="Grok" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Jobs</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] ">
+                            <img src="assets/communities.svg" alt="Communities" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Communities</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] premium">
+                            <img src="assets/xlogo.svg" alt="Premium" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Premium</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] verified ">
+                            <img src="assets/verified.svg" alt="Premium" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Verified Orgs</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 px-4 py-2 rounded-full hover:bg-[#282828] ">
+                            <img src="assets/profile.svg" alt="Profile" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">Profile</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4  px-4 py-2 rounded-full hover:bg-[#282828] ">
+                            <img src="assets/more.svg" alt="More" class="w-6 h-6" />
+                            <span class="hidden 2xl:block ">More</span>
+                        </a>
+                    </nav>
+
+                    <!-- Post Button -->
+                    <button
+                        class="mt-2 bg-white text-black font-semibold 2xl:rounded-full 2xl:px-10 2xl:py-3 ml-[10px] rounded-[50%] hover:bg-neutral-200 transition text-center 2xl:w-[8vw]  h-[50px] w-[50px] justify-center items-center flex"><span
+                            class="text-black post hidden 2xl:block">
+                            Post
+                        </span>
+                        <img src="assets/leaf.svg" class="2xl:hidden" alt="">
+                    </button>
+                </div>
+
+                <!-- Profile Mini -->
+                <div
+                    class="flex items-center justify-between gap-3 px-3 py-2 rounded-full hover:bg-neutral-900 cursor-pointer">
+                    <div class="flex  leading-tight gap-2">
                         <img src="https://pbs.twimg.com/profile_images/1963478308194324480/UPerjgwY_bigger.png"
-                            class="object-cover rounded-[50%]" alt="S">
+                            class="w-[40px] h-[40px] rounded-[50%]" alt="">
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-sm hidden 2xl:block">Soham Modi</span>
+                            <span class="text-neutral-500 text-xs hidden 2xl:block">@ModiSoham20780</span>
+                        </div>
                     </div>
-                </a>
-            </nav>
+                    <img src="assets/more.svg" alt="More options" class="w-5 h-5 hidden 2xl:block" />
+                </div>
+            </aside>
         </div>
         <!-- Removed empty div -->
-        <div class="flex-col relative left-[90px]">
+        <div class="flex-col left-[180px]">
             <div class="flex fixed backdrop-blur-[10px]   z-10">
 
                 <div
@@ -230,711 +266,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
-                    <div class="postblockupper flex justify-between gap-[10px] items-center">
-                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-                            <div
-                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
-                                    alt="" class="object-cover" srcset="">
-                            </div>
-                            <div class="name"><span>Abhijit Chavda</span></div>
-                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
-                            <div class="date flex items-center">
-                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                    style="color:#71767b;font-weight: 500;">.</span>
-                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                    5</span>
-                            </div>
-                        </div>
-                        <div class="grokandmore flex gap-[5px] mr-[5px]">
-                            <div class="grok">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
-                                    viewBox="0 0 33 32" aria-hidden="true"
-                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
-                                    <g>
-                                        <path
-                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="more">
-                                <img src="assets/Post/more.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="msg ml-[55px] mt-[-15px]">
-                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
-                            into India's Ukraine.</span>
-                    </div>
-                    <div
-                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
-                        <div class="aprofile flex justify-start flex-col items-start">
-                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
 
-                                <div
-                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
-                                        alt="" class="object-cover" srcset="">
-                                </div>
-                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
-                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
-                                </div>
-                                <div class="date flex items-center">
 
-                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                        style="color:#71767b;font-weight: 500;">.</span>
-                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                        5</span>
 
-                                </div>
 
-                            </div>
-                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
 
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
-                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
-                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
-                                    voluptatem!
-                                </span>
-                            </div>
-                            <div class="img">
-                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
-                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
-                        <div class="e1 flex gap-[50px]">
-                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
-                                <span>421</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
-                                <span>8.4K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
-                                <span>40K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
-                                <span>857K</span>
-                            </div>
 
-                        </div>
-                        <div class="right flex gap-[10px]">
-                            <div><img src="assets/save.svg" alt=""></div>
-                            <div><img src="assets/share.svg" alt=""></div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
-                    <div class="postblockupper flex justify-between gap-[10px] items-center">
-                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-                            <div
-                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
-                                    alt="" class="object-cover" srcset="">
-                            </div>
-                            <div class="name"><span>Abhijit Chavda</span></div>
-                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
-                            <div class="date flex items-center">
-                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                    style="color:#71767b;font-weight: 500;">.</span>
-                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                    5</span>
-                            </div>
-                        </div>
-                        <div class="grokandmore flex gap-[5px] mr-[5px]">
-                            <div class="grok">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
-                                    viewBox="0 0 33 32" aria-hidden="true"
-                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
-                                    <g>
-                                        <path
-                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="more">
-                                <img src="assets/Post/more.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="msg ml-[55px] mt-[-15px]">
-                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
-                            into India's Ukraine.</span>
-                    </div>
-                    <div
-                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
-                        <div class="aprofile flex justify-start flex-col items-start">
-                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-
-                                <div
-                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
-                                        alt="" class="object-cover" srcset="">
-                                </div>
-                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
-                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
-                                </div>
-                                <div class="date flex items-center">
-
-                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                        style="color:#71767b;font-weight: 500;">.</span>
-                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                        5</span>
-
-                                </div>
-
-                            </div>
-                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
-
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
-                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
-                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
-                                    voluptatem!
-                                </span>
-                            </div>
-                            <div class="img">
-                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
-                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
-                        <div class="e1 flex gap-[50px]">
-                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
-                                <span>421</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
-                                <span>8.4K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
-                                <span>40K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
-                                <span>857K</span>
-                            </div>
-
-                        </div>
-                        <div class="right flex gap-[10px]">
-                            <div><img src="assets/save.svg" alt=""></div>
-                            <div><img src="assets/share.svg" alt=""></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
-                    <div class="postblockupper flex justify-between gap-[10px] items-center">
-                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-                            <div
-                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
-                                    alt="" class="object-cover" srcset="">
-                            </div>
-                            <div class="name"><span>Abhijit Chavda</span></div>
-                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
-                            <div class="date flex items-center">
-                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                    style="color:#71767b;font-weight: 500;">.</span>
-                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                    5</span>
-                            </div>
-                        </div>
-                        <div class="grokandmore flex gap-[5px] mr-[5px]">
-                            <div class="grok">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
-                                    viewBox="0 0 33 32" aria-hidden="true"
-                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
-                                    <g>
-                                        <path
-                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="more">
-                                <img src="assets/Post/more.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="msg ml-[55px] mt-[-15px]">
-                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
-                            into India's Ukraine.</span>
-                    </div>
-                    <div
-                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
-                        <div class="aprofile flex justify-start flex-col items-start">
-                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-
-                                <div
-                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
-                                        alt="" class="object-cover" srcset="">
-                                </div>
-                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
-                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
-                                </div>
-                                <div class="date flex items-center">
-
-                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                        style="color:#71767b;font-weight: 500;">.</span>
-                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                        5</span>
-
-                                </div>
-
-                            </div>
-                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
-
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
-                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
-                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
-                                    voluptatem!
-                                </span>
-                            </div>
-                            <div class="img">
-                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
-                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
-                        <div class="e1 flex gap-[50px]">
-                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
-                                <span>421</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
-                                <span>8.4K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
-                                <span>40K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
-                                <span>857K</span>
-                            </div>
-
-                        </div>
-                        <div class="right flex gap-[10px]">
-                            <div><img src="assets/save.svg" alt=""></div>
-                            <div><img src="assets/share.svg" alt=""></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
-                    <div class="postblockupper flex justify-between gap-[10px] items-center">
-                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-                            <div
-                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
-                                    alt="" class="object-cover" srcset="">
-                            </div>
-                            <div class="name"><span>Abhijit Chavda</span></div>
-                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
-                            <div class="date flex items-center">
-                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                    style="color:#71767b;font-weight: 500;">.</span>
-                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                    5</span>
-                            </div>
-                        </div>
-                        <div class="grokandmore flex gap-[5px] mr-[5px]">
-                            <div class="grok">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
-                                    viewBox="0 0 33 32" aria-hidden="true"
-                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
-                                    <g>
-                                        <path
-                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="more">
-                                <img src="assets/Post/more.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="msg ml-[55px] mt-[-15px]">
-                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
-                            into India's Ukraine.</span>
-                    </div>
-                    <div
-                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
-                        <div class="aprofile flex justify-start flex-col items-start">
-                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-
-                                <div
-                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
-                                        alt="" class="object-cover" srcset="">
-                                </div>
-                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
-                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
-                                </div>
-                                <div class="date flex items-center">
-
-                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                        style="color:#71767b;font-weight: 500;">.</span>
-                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                        5</span>
-
-                                </div>
-
-                            </div>
-                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
-
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
-                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
-                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
-                                    voluptatem!
-                                </span>
-                            </div>
-                            <div class="img">
-                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
-                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
-                        <div class="e1 flex gap-[50px]">
-                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
-                                <span>421</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
-                                <span>8.4K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
-                                <span>40K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
-                                <span>857K</span>
-                            </div>
-
-                        </div>
-                        <div class="right flex gap-[10px]">
-                            <div><img src="assets/save.svg" alt=""></div>
-                            <div><img src="assets/share.svg" alt=""></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
-                    <div class="postblockupper flex justify-between gap-[10px] items-center">
-                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-                            <div
-                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
-                                    alt="" class="object-cover" srcset="">
-                            </div>
-                            <div class="name"><span>Abhijit Chavda</span></div>
-                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
-                            <div class="date flex items-center">
-                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                    style="color:#71767b;font-weight: 500;">.</span>
-                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                    5</span>
-                            </div>
-                        </div>
-                        <div class="grokandmore flex gap-[5px] mr-[5px]">
-                            <div class="grok">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
-                                    viewBox="0 0 33 32" aria-hidden="true"
-                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
-                                    <g>
-                                        <path
-                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="more">
-                                <img src="assets/Post/more.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="msg ml-[55px] mt-[-15px]">
-                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
-                            into India's Ukraine.</span>
-                    </div>
-                    <div
-                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
-                        <div class="aprofile flex justify-start flex-col items-start">
-                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-
-                                <div
-                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
-                                        alt="" class="object-cover" srcset="">
-                                </div>
-                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
-                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
-                                </div>
-                                <div class="date flex items-center">
-
-                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                        style="color:#71767b;font-weight: 500;">.</span>
-                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                        5</span>
-
-                                </div>
-
-                            </div>
-                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
-
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
-                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
-                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
-                                    voluptatem!
-                                </span>
-                            </div>
-                            <div class="img">
-                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
-                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
-                        <div class="e1 flex gap-[50px]">
-                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
-                                <span>421</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
-                                <span>8.4K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
-                                <span>40K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
-                                <span>857K</span>
-                            </div>
-
-                        </div>
-                        <div class="right flex gap-[10px]">
-                            <div><img src="assets/save.svg" alt=""></div>
-                            <div><img src="assets/share.svg" alt=""></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
-                    <div class="postblockupper flex justify-between gap-[10px] items-center">
-                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-                            <div
-                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
-                                    alt="" class="object-cover" srcset="">
-                            </div>
-                            <div class="name"><span>Abhijit Chavda</span></div>
-                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
-                            <div class="date flex items-center">
-                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                    style="color:#71767b;font-weight: 500;">.</span>
-                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                    5</span>
-                            </div>
-                        </div>
-                        <div class="grokandmore flex gap-[5px] mr-[5px]">
-                            <div class="grok">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
-                                    viewBox="0 0 33 32" aria-hidden="true"
-                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
-                                    <g>
-                                        <path
-                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="more">
-                                <img src="assets/Post/more.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="msg ml-[55px] mt-[-15px]">
-                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
-                            into India's Ukraine.</span>
-                    </div>
-                    <div
-                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
-                        <div class="aprofile flex justify-start flex-col items-start">
-                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-
-                                <div
-                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
-                                        alt="" class="object-cover" srcset="">
-                                </div>
-                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
-                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
-                                </div>
-                                <div class="date flex items-center">
-
-                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                        style="color:#71767b;font-weight: 500;">.</span>
-                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                        5</span>
-
-                                </div>
-
-                            </div>
-                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
-
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
-                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
-                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
-                                    voluptatem!
-                                </span>
-                            </div>
-                            <div class="img">
-                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
-                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
-                        <div class="e1 flex gap-[50px]">
-                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
-                                <span>421</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
-                                <span>8.4K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
-                                <span>40K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
-                                <span>857K</span>
-                            </div>
-
-                        </div>
-                        <div class="right flex gap-[10px]">
-                            <div><img src="assets/save.svg" alt=""></div>
-                            <div><img src="assets/share.svg" alt=""></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="postblock border-[0.8px] border-[#4d4c4cc8]">
-                    <div class="postblockupper flex justify-between gap-[10px] items-center">
-                        <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-                            <div
-                                class="profilepic w-[40px] h-[40px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                <img src="https://pbs.twimg.com/profile_images/1431454690223423495/R3D9ZJLN_bigger.jpg"
-                                    alt="" class="object-cover" srcset="">
-                            </div>
-                            <div class="name"><span>Abhijit Chavda</span></div>
-                            <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                            <div class="id"><span style="color:#71767b;font-weight: 500;">@AbhijitChavda</span></div>
-                            <div class="date flex items-center">
-                                <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                    style="color:#71767b;font-weight: 500;">.</span>
-                                <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                    5</span>
-                            </div>
-                        </div>
-                        <div class="grokandmore flex gap-[5px] mr-[5px]">
-                            <div class="grok">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#71767b"
-                                    viewBox="0 0 33 32" aria-hidden="true"
-                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03">
-                                    <g>
-                                        <path
-                                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="more">
-                                <img src="assets/Post/more.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="msg ml-[55px] mt-[-15px]">
-                        <span style="font-weight: 400;">The Americans are laying the groundwork for turning Pakistan
-                            into India's Ukraine.</span>
-                    </div>
-                    <div
-                        class="flex justify-start items-start w-[520px] rounded-[4%] attachments border-[0.8px] border-[#4d4c4cc8] box-border ml-[50px] overflow-hidden hover:bg-[#282828] pb-[30px] mt-[10px] ">
-                        <div class="aprofile flex justify-start flex-col items-start">
-                            <div class="profile flex gap-[3px] justify-center items-center ml-[10px]">
-
-                                <div
-                                    class="profilepic w-[24px] h-[24px] object-cover rounded-[50%] overflow-hidden mt-[10px]">
-                                    <img src="https://pbs.twimg.com/profile_images/1611268384435630082/CrwOy2po_400x400.jpg"
-                                        alt="" class="object-cover" srcset="">
-                                </div>
-                                <div class="name1 "><span class="text-2xl">Sucheta Dalal</span></div>
-                                <div class="bluetick"><img src="assets/bluetick.svg" alt=""></div>
-                                <div class="id1"><span style="color:#71767b;font-weight: 500;">@SuchetaDalal</span>
-                                </div>
-                                <div class="date flex items-center">
-
-                                    <span class="ml-[5px] mt-[-5px] mr-[5px]"
-                                        style="color:#71767b;font-weight: 500;">.</span>
-                                    <span class="list-disc marker:text-#aaa" style="color:#71767b;font-weight: 500;">Sep
-                                        5</span>
-
-                                </div>
-
-                            </div>
-                            <div class="msg ml-[10px] pl-[12px] pr-[12px]"><span>
-
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima a laborum
-                                    doloremque saepe molestias iste enim, libero nihil optio est quod ipsa eos deserunt
-                                    quasi corrupti aliquam, dolor quis deleniti ratione explicabo accusantium
-                                    voluptatem!
-                                </span>
-                            </div>
-                            <div class="img">
-                                <img class="w-[359.67px] h-[420px] ml-[100px] mt-[20px]"
-                                    src="https://pbs.twimg.com/media/G0EnJWsXEAE9jWe?format=jpg&name=small" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="engagement flex ml-[55px] mt-[10px] mb-[10px] gap-[100px]">
-                        <div class="e1 flex gap-[50px]">
-                            <div class="flex gap-[5px]"><img src="assets/comments.svg" alt="">
-                                <span>421</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/repost.svg" alt="">
-                                <span>8.4K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/likes.svg" alt="">
-                                <span>40K</span>
-                            </div>
-                            <div class="flex gap-[5px]"><img src="assets/views.svg" alt="">
-                                <span>857K</span>
-                            </div>
-
-                        </div>
-                        <div class="right flex gap-[10px]">
-                            <div><img src="assets/save.svg" alt=""></div>
-                            <div><img src="assets/share.svg" alt=""></div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         </div>
 
-        <div class="footer ml-[150px] w-[362px]  ">
+        <div class="footer  w-[362px]  left-[700px]  hidden xl:block">
             <div class="search fixed bg-black w-[40vw] z-10 mb-[100px]">
                 <img src="assets/search.svg" class="relative z-1 top-[13px] left-[10px]" alt="">
                 <input type="text"
@@ -969,7 +312,7 @@
                     </div>
                 </div>
                 <div class="actualnews ">
-                    <div class="1 flex flex-col items-start mt-[5px]">
+                    <div class="1 flex flex-col items-start mt-[5px] hover:bg-[#282828] cursor-pointer ">
                         <div class="headline p-[15px] pb-0 text-wrap">
                             Nepal's Youth Topple Regime in Fiery Anti-Corruption Uprising
                         </div>
@@ -982,8 +325,8 @@
                             <span class="word-spacing text-[12px]">1 day ago · News · 79.9K posts</span>
                         </div>
                     </div>
-                    <div class="1 flex flex-col items-start mt-[5px]">
-                        <div class="headline p-[15px] pb-0 text-wrap">
+                    <div class="1 flex flex-col items-start mt-[5px] hover:bg-[#282828] cursor-pointer">
+                        <div class="headline p-[15px] pb-0 text-wrap ">
                             Nepal's Youth Topple Regime in Fiery Anti-Corruption Uprising
                         </div>
                         <div class="analytics flex p-[10px] items-center gap-[5px]">
@@ -995,7 +338,8 @@
                             <span class="word-spacing text-[12px]">1 day ago · News · 79.9K posts</span>
                         </div>
                     </div>
-                    <div class="1 flex flex-col items-start mt-[5px]">
+                    <div
+                        class="1 flex flex-col items-start mt-[5px] hover:bg-[#282828] rounded-b-[10px] cursor-pointer">
                         <div class="headline p-[15px] pb-0 text-wrap">
                             Nepal's Youth Topple Regime in Fiery Anti-Corruption Uprising
                         </div>
@@ -1096,8 +440,8 @@
                 <a href="#" class="block px-4 py-3 text-sky-500 hover:bg-neutral-800/60">Show more</a>
             </div>
             <div class=" bg-black blah flex w-[30vw] sticky top-[480px] ">
-                <footer class="mt-auto w-full blah">
-                    <div class="max-w-screen-md mx-auto px-6 py-6">
+                <footer class="mt-auto w-full blah lg">
+                    <div class="max-w-screen-md mx-auto px-6 py-6 ">
                         <nav aria-label="Footer links" class="flex flex-wrap items-center text-sm blah">
                             <a href="#" class="hover:underline blah">Terms of Service</a>
                             <span class="mx-3 h-4 w-px bg-neutral-700 inline-block" aria-hidden="true"></span>
